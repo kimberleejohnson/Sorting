@@ -41,6 +41,39 @@ def selection_sort(arr):
     # Put the smallest element at the end of the sorted 
         # Swap the first element of unsorted with the smallest element 
         arr[smallest_index], arr[current_index] = arr[current_index], arr[smallest_index]
-        
+
     return arr 
 
+#Recursion with factorials example 
+
+factorial(5) => 5 * 4 * 3 * 2 *1 = 120 
+factorial(4) => 4 * 3 * 2 *1 = 120 
+factorial(3) => 3 * 2 *1 = 120 
+factorial(2) => 2 *1 = 120 
+factorial(1) => 1 = 1 
+
+factorial(5) = 5 * factorial(4)
+
+def factorial(num): 
+    total = 1
+    for n in range (2, num + 1): 
+        total *= n
+    return total 
+
+def factorial(num): 
+    print(num)
+    if num <= 1: 
+        return 1
+    return num * factorial(num - 1)
+
+[3, 5, 1, 6, 8, 9, 2, 4]
+
+## Pick a pivot of 4, move so everything smaller to the left, greater to the right 
+[3, 1, 2,       4,      5, 6, 8, 9]
+
+## Now, split into two 
+[3, 1, 2,       4,          5, 6, 8, 9]
+
+[1, 2, 3,       4,        5, 6, 8,     9]
+
+## Recursively call sort on sub array
