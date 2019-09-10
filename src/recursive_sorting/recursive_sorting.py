@@ -42,9 +42,11 @@ def merge_sort( arr ):
             sorted_arr.append(right_values[right_index])
             right_index += 1
     # Copy remainders of lists over 
-    sorted_arr += right_values[:right_index]
-    sorted_arr += left_values[:left_index]
-    return sorted_arr 
+    sorted_arr += left_values[left_index:]
+    sorted_arr += right_values[right_index:]
+
+    # Return sorted 
+    return sorted_arr
 
 
 # STRETCH: implement an in-place merge sort algorithm
