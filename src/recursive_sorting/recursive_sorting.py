@@ -1,12 +1,3 @@
-# TO-DO: complete the help function below to merge 2 sorted arrays
-def merge( arrA, arrB ):
-    elements = len( arrA ) + len( arrB )
-    merged_arr = [0] * elements
-    # TO-DO
-    
-    return merged_arr
-
-
 # Merge Sort function USING RECURSION
 ## Split list in half, using a midpoint 
 ## Sorts halfs as it brings them back together 
